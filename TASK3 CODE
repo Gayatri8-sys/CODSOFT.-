@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Code Machine</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    #mysterious-calculator {
+      width: 300px;
+      padding: 20px;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    input {
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 48px;
+      height: 48px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="mysterious-calculator">
+    <input type="text" id="hidden-display" readonly>
+    <br>
+    <button onclick="appendDigit('1')">1</button>
+    <button onclick="appendDigit('2')">2</button>
+    <button onclick="appendDigit('3')">3</button>
+    <button onclick="appendOperator('+')">+</button>
+    <br>
+    <button onclick="appendDigit('4')">4</button>
+    <button onclick="appendDigit('5')">5</button>
+    <button onclick="appendDigit('6')">6</button>
+    <button onclick="appendOperator('-')">-</button>
+    <br>
+    <button onclick="appendDigit('7')">7</button>
+    <button onclick="appendDigit('8')">8</button>
+    <button onclick="appendDigit('9')">9</button>
+    <button onclick="appendOperator('*')">*</button>
+    <br>
+    <button onclick="appendDigit('0')">0</button>
+    <button onclick="clearHiddenDisplay()">C</button>
+    <button onclick="revealSecret()">=</button>
+    <button onclick="appendOperator('/')">/</button>
+  </div>
+
+  <script>
+    let hiddenDisplay = document.getElementById('hidden-display');
+
+    function appendDigit(digit) {
+      hiddenDisplay.value += digit;
+    }
+
+    function appendOperator(operator) {
+      hiddenDisplay.value += operator;
+    }
+
+    function clearHiddenDisplay() {
+      hiddenDisplay.value = '';
+    }
+
+    function revealSecret() {
+      try {
+        hiddenDisplay.value = eval(hiddenDisplay.value);
+      } catch (error) {
+        hiddenDisplay.value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>
