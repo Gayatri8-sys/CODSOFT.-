@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gayatri Ashok Gorde - Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Gayatri Ashok Gorde</h1>
+      <p>Web Developer</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with a keen interest in creating interactive and dynamic websites. 
+        My goal is to leverage my skills to build elegant and user-friendly web applications.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website showcasing my skills and projects.</p>
+      </div>
+      <div class="project">
+        <h3>Task Manager App</h3>
+        <p>An interactive task manager application built with React.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let's connect! Feel free to reach out to me:</p>
+      <p>Email: <a href="gayatrigorde45@gmail.com">gayatrigorde45@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/gayatri-gorde-59070a25a">LinkedIn Profile</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
