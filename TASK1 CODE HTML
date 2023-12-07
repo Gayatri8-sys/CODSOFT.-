@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Tourism Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="overlay">
+      <h1>Your Tourism Adventure</h1>
+      <p>Explore the world and create lasting memories</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Discover breathtaking landscapes, cultural treasures, and exciting adventures with our expertly curated travel experiences.</p>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <div class="container">
+      <h2>Popular Destinations</h2>
+      <div class="destination">
+        <img src="destination1.jpg" alt="Destination 1">
+        <h3>Exotic Island Paradise</h3>
+        <p>Relax on pristine beaches and explore vibrant coral reefs</p>
+      </div>
+      <div class="destination">
+        <img src="destination2.jpg" alt="Destination 2">
+        <h3>Mountain Retreat</h3>
+        <p>Escape to the mountains for breathtaking views and outdoor adventures</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Ready to embark on your next adventure? Contact our team for personalized travel plans.</p>
+      <a href="mailto:tourismadventure@gmail.com">tourismadventure@gmail.com</a>
+    </div>
+  </section>
+
+</body>
+</html>
